@@ -30,10 +30,10 @@ namespace Sudoku
                 {
                     format = TypeOfInputDeclaration.GetInputFormatFromUser();
                 }
-                catch (Exception ex)
+                catch (Exception exeption)
                 {
                     Console.WriteLine();
-                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(exeption.Message);
                     Solve();
                 }
 
@@ -44,10 +44,10 @@ namespace Sudoku
                     {
                         TypingInput.SetBoardPropsFromTyping(myBoard);
                     }
-                    catch (Exception e)
+                    catch (Exception exeption)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine(exeption.Message);
                         Console.WriteLine();
                         Solve();
                     }
@@ -59,10 +59,10 @@ namespace Sudoku
                     {
                         FileInput.SetBoardPropsFromFile(myBoard);
                     }
-                    catch (Exception exe)
+                    catch (Exception exeption)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(exe.Message);
+                        Console.WriteLine(exeption.Message);
                         Console.WriteLine();
                         Solve();
                     }
@@ -70,10 +70,10 @@ namespace Sudoku
                     {
                         FileOutput.WriteBoardToFileAfterSolution(myBoard);
                     }
-                    catch (Exception exep)
+                    catch (Exception exeption)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(exep.Message);
+                        Console.WriteLine(exeption.Message);
                         Console.WriteLine();
                         Solve();
                     }

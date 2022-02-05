@@ -40,7 +40,7 @@ namespace Sudoku
             }
 
             if (CheckInput.CheckInputSizeToBoard(((destinationBoard.GetStringBoardValues()).Length)) && (CheckInput.CheckCharactersFromInputToBoard(destinationBoard.GetStringBoardValues(), ((destinationBoard.GetStringBoardValues()).Length)))
-                && CheckBoardParts.CheckNotTwiceInAllBoxes(destinationBoard) && CheckBoardParts.NotTwiceInAllColumns(destinationBoard) && CheckBoardParts.NotTwiceInAllRows(destinationBoard))  ////++++++++++++++++++++++
+                && CheckBoardParts.CheckNotTwiceInAllBoxes(destinationBoard) && CheckBoardParts.NotTwiceInAllColumns(destinationBoard) && CheckBoardParts.NotTwiceInAllRows(destinationBoard))  
             {
                 destinationBoard.SetBoardSize((int)(Math.Sqrt(((destinationBoard.GetStringBoardValues()).Length))));
                 char[,] charBoard = new char[(destinationBoard.GetBoardSize()), (destinationBoard.GetBoardSize())];

@@ -26,7 +26,7 @@ namespace Sudoku
                 {
                     if ((board.GetCharBoardValues()[i, j]) == '0')
                     {
-                        for (char character = '1'; character <= possibeCharacters[(possibeCharacters.Length)-1]; character++) // <=
+                        for (char character = '1'; character <= possibeCharacters[(possibeCharacters.Length)-1]; character++) 
                         {
                             if (CheckBoardParts.CanBeInsertedToBoard(board, i, j, character))
                             {
