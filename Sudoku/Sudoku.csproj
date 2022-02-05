@@ -44,18 +44,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Board.cs" />
+    <Compile Include="CheckBoardParts.cs" />
     <Compile Include="CheckInput.cs" />
     <Compile Include="FileOutput.cs" />
+    <Compile Include="SolveBoard.cs" />
+    <Compile Include="SolveSudoku.cs" />
     <Compile Include="TypingOutput.cs" />
     <Compile Include="FileInput.cs" />
-    <Compile Include="TypeOfInputdeclaration.cs" />
-    <Compile Include="Help.cs" />
+    <Compile Include="TypeOfInputDeclaration.cs" />
+    <Compile Include="MakeArrayOfPossibeCharacters.cs" />
     <Compile Include="TypingInput.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="file.txt" />
+    <Content Include="file1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
